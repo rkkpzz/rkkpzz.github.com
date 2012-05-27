@@ -129,11 +129,10 @@ body {font: 13px Helmet, Freesans, sans-serif;}
 /* using local fonts? make sure to read up on Paul Irish's 
 	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
 
-/* we like off-black for text */
-body, select, input, textarea {color: #333;}
+body, select, input, textarea {color: #666;}
 
-a {color: #03f;}
-a:hover {color: #69f;}
+a {color: #dddfe1;}
+a:hover {color: #eef0f2;}
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
@@ -166,18 +165,17 @@ header.middle-it-up h2 { font-size: 52px; }
 	font-family: 'Black Ops One', 'Arial Black', sans-serif;
 	font-weight: 400;
 	
-	/*color: #f21;*/
-	color: #111315;
-	/*color: rgba(0, 168, 255, 0.0);*/
-	text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5),
-		-8px -8px 0 rgba(0, 221, 238, 0.5),
+	color: #000;
+	text-shadow: -8px -8px 0 rgba(0, 221, 238, 0.5),
 		8px 8px 0 rgba(255, 34, 17, 1.0),
 		-16px -16px 0 rgba(0, 221, 238, 0.25),
 		16px 16px 0 rgba(255, 34, 17, 0.5),
 		-32px -32px 0 rgba(0, 221, 238, 0.125),
 		32px 32px 0 rgba(255, 34, 17, 0.25),
 		-64px -64px 0 rgba(0, 221, 238, 0.0625),
-		64px 64px 0 rgba(255, 34, 17, 0.125);
+		64px 64px 0 rgba(255, 34, 17, 0.125),
+		-128px -128px 0 rgba(0, 221, 238, 0.03125),
+		128px 128px 0 rgba(255, 34, 17, 0.0625);
 }
 
 .its-who-i-am-bitch {
@@ -189,10 +187,8 @@ header.middle-it-up h2 { font-size: 52px; }
 }
 
 .about-it-it {
-	font-family: 'Arial', sans-serif;
 	font-weight: 400;
 	
-	color: #666;
 }
 
 body > footer {
