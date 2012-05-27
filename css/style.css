@@ -119,6 +119,56 @@ button {width: auto; overflow: visible;}
 .clearfix { zoom: 1; }  
 
 
+/* Full-height layout
+-------------------------------------------------------------------------------*/
+
+html { height: 100%; }
+body { height: 100%; }
+
+body >
+#right-proper-body-wrap {
+	position: relative;
+	height: auto !important; min-height: 100%;
+	_height: 100%; /* IE 4-6 fix */
+	overflow: hidden; /* to keep particles from flying off the page */
+	margin: 0 auto;
+}
+
+body > #right-proper-body-wrap >
+#right-proper-page-base {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+/* PIE clearfix */
+body > #right-proper-body-wrap >
+#right-proper-page-base { display: inline-block; }
+body > #right-proper-body-wrap >
+#right-proper-page-base:after { content: " "; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+body > #right-proper-body-wrap >
+#right-proper-page-base { display: block; }
+
+body > #right-proper-body-wrap > #right-proper-page-base >
+#right-proper-page-content {
+	margin-left: auto; margin-right: auto; width: 960px;
+	margin-top: 40px;
+}
+
+/* PIE clearfix */
+body > #right-proper-body-wrap > #right-proper-page-base >
+#right-proper-page-content { display: inline-block; }
+body > #right-proper-body-wrap > #right-proper-page-base >
+#right-proper-page-content:after { content: " "; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+body > #right-proper-body-wrap > #right-proper-page-base >
+#right-proper-page-content { display: block; }
+
+
+body >
+#right-proper-footer {
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	height: 20px;
+}
 
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
@@ -145,21 +195,21 @@ ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
 
 
+
 body {
 	background-color: #111315;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-}
-
-header.middle-it-up {
+header.middle-it-up,
+hgroup.middle-it-up {
 	margin: 0 auto; text-align: center;
 	padding: 0.2em;
+	
+	margin-top: 200px;
 }
 
-header.middle-it-up h1 { font-size: 208px; }
-header.middle-it-up h2 { font-size: 52px; }
+.middle-it-up h1 { font-size: 208px; line-height: 1.5em; }
+.middle-it-up h2 { font-size: 39px; }
 
 .its-me-bitch {
 	font-family: 'Black Ops One', 'Arial Black', sans-serif;
@@ -183,24 +233,20 @@ header.middle-it-up h2 { font-size: 52px; }
 	font-weight: 400;
 	
 	color: #ccc;
-	text-shadow: 0px 0px 10px #000;
+	text-shadow: 0px 0px 12px #000,
+		0px 0px 6px #000,
+		0px 0px 3px #000;
 }
 
-.about-it-it {
-	font-weight: 400;
-	
-}
 
 body > footer {
+	background-color: rgba(17, 19, 21, 0.8);
 	padding: 4px 16px;
 }
-footer .about-it-it { font-size: 13px; }
+.about-it-it { font-size: 13px; line-height: 1em; }
+
 
 .punc { opacity: 0.5; }
-
-
-
-
 
 
 
