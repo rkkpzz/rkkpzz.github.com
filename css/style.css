@@ -71,10 +71,34 @@ td { vertical-align: top; }
 
 
 /* ===== Primary Styles ========================================================
-   Author:
+   Author: I thought I told you: Riskky Parizzi
    ========================================================================== */
 
+body {
+	background-color: #111315;
+}
 
+header.middle-it-up {
+	margin: 0 auto;
+	padding: 0.2em;
+}
+
+header.middle-it-up h1 { font-size: 208px; }
+header.middle-it-up h2 { font-size: 52px; }
+
+.its-me-bitch {
+	font-family: 'Black Ops One', 'Arial Black', sans-serif;
+	
+	color: #f21;
+	text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871;
+}
+
+.its-who-i-am-bitch {
+	font-family: 'Tangerine', cursive;
+	
+	color: #eee;
+	text-shadow: 1px 1px 0px black, 2px 2px 0px #476871, 3px 3px 0px #476871;
+}
 
 
 
